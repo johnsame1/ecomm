@@ -1,0 +1,214 @@
+.collection-container {
+  text-align: center;
+  padding: 40px;
+}
+
+.collection-container .title {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.collection-container .filters {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: auto;
+  border-bottom: 5px solid #ebe0d0;
+  margin-bottom: 40px;
+  width: fit-content;
+  font-size: 20px;
+}
+
+.collection-container .filters button {
+  padding: 10px 20px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  position: relative;
+  color: #000;
+  font-size: 25px;
+}
+
+.collection-container .filters button::after {
+  content: '';
+  position: absolute;
+  bottom: -4.8px;
+  left: 0;
+  width: 100%;
+  height: 4.5px;
+  background: transparent;
+  transition: background 0.3s;
+}
+
+.collection-container .filters .active::after {
+  background: #b58a4d;
+}
+
+.collection-container .card-slider {
+  display: flex;
+  overflow-x: auto;
+  justify-content: center;
+  gap: 20px;
+  scroll-behavior: smooth;
+  width: 100%;
+}
+
+.collection-container .card {
+  border: 0.5px solid #b58a4d;
+  padding: 15px;
+  width: 220px;
+  flex-shrink: 0;
+  position: relative;
+  border-radius: 10px;
+}
+
+.collection-container .fav {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: black;
+  background-color: transparent;
+}
+
+.collection-container .sale {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  background: #d8c3a5b2;
+  color: black;
+  font-size: 12px;
+  padding: 5px 16px;
+  border-radius: 5px;
+}
+
+.collection-container .card img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.collection-container .rating-colors {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  margin: 0;
+}
+
+.collection-container .stars {
+  font-size: 20px;
+  color: #f4d235;
+  margin: 0;
+}
+
+.collection-container .colors span {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0 2px;
+}
+
+.collection-container .board-top {
+  margin-left: -15px;
+
+  width: 250px;
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 1px solid #b58a4d;
+}
+
+.collection-container .price-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.collection-container .prices {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.collection-container .old {
+  display: block;
+  text-decoration: line-through;
+  font-size: 15 px;
+  color: gray;
+}
+
+.collection-container .actions button {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+.collection-container .view-all {
+  background: transparent;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 20px;
+  align-items: center;
+  display: inline-flex;
+  gap: 10px;
+  margin-top: 30px;
+}
+@media (max-width: 768px) {
+  .collection-container .collection-container {
+    padding: 20px;
+  }
+
+  .collection-container .title {
+    font-size: 28px;
+  }
+
+  .collection-container .filters {
+    gap: 10px;
+    font-size: 18px;
+  }
+
+  .collection-container .filters button {
+    font-size: 18px;
+    padding: 8px 16px;
+  }
+
+  .collection-container .card-slider {
+    gap: 12px;
+  }
+
+  .collection-container .card {
+    width: 180px;
+    padding: 10px;
+  }
+
+  .collection-container .board-top {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .collection-container .rating-colors {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .collection-container .price-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .collection-container .actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,247 @@
+.banner {
+  width: 100%;
+  max-width: 100%;
+  background: #ebe0d0;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  margin-top: -3px;
+}
+.banner .container {
+  position: relative;
+}
+.imgClothes {
+  position: relative;
+  width: 400px;
+  height: 400px;
+}
+
+.circleBackground {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  background-color: #d8c3a5;
+  border-radius: 50%;
+  top: 50px;
+  left: 130px;
+  z-index: 1;
+}
+
+.imgClothes img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 2;
+}
+
+.banner .container .Button {
+  display: none;
+}
+.banner .container .bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+}
+
+.banner .container .bg .title {
+  width: 50%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px;
+}
+.banner .container .bg .title h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: 50px;
+  color: #b58a4d;
+  position: relative;
+  z-index: 1;
+}
+
+.banner .container .bg .title h1::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -20px;
+  width: 0;
+  height: 0;
+  border-right: 100px solid transparent;
+  border-top: 70px solid #d8c3a5;
+  z-index: -1;
+}
+
+.banner .container .bg .title p {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: 25px;
+  color: #b58a4d;
+  width: 70%;
+}
+
+.banner .container .bg .title .Button {
+  margin-top: 50px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 24px;
+}
+
+.banner .container .bg .title .Button .id {
+  border-radius: 10px;
+  padding: 10px 45px;
+  border: 2px solid #b58a4d;
+  color: black;
+  font-size: 20px;
+  transition: color 0.5s ease-in-out, background-color 0.5s ease;
+}
+
+.banner .container .bg .title .Button .id:hover {
+  background-color: #b58a4d;
+  color: white;
+  transition: 1s;
+}
+
+.banner .container .bg .imgClothes {
+  flex: 1;
+  max-width: 500px;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+.banner .container .imgClothes img {
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+  z-index: 10;
+}
+
+@media (max-width: 1024px) {
+  .banner {
+    height: auto;
+    padding: 40px 0;
+    margin-top: -3px;
+  }
+
+  .banner .container .bg {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .banner .container .bg .title {
+    width: 100%;
+    padding-left: 0;
+    padding-top: 25px;
+  }
+  .banner .container .Button {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .banner .container .bg .title .Button {
+    display: none;
+  }
+
+  .banner .container .Button .id {
+    border-radius: 3px;
+    padding: 10px 50px;
+    border-color: transparent;
+    color: #b58a4d;
+    font-size: 15px;
+  }
+
+  .banner .container .Button .id:hover {
+    background-color: #d8c3a5;
+    color: white;
+    transition: 1s;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner .container .bg .title p {
+    width: 100%;
+  }
+  .banner .container {
+    width: 95%;
+  }
+
+  .banner .container .bg .title {
+    text-align: center;
+  }
+
+  .banner .container .bg .title .Button {
+    display: none;
+  }
+
+  .Button.mobile-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .Button.mobile-buttons .id {
+    width: 100%;
+    text-align: center;
+  }
+  .imgClothes {
+    width: 250px;
+    height: 250px;
+  }
+
+  .circleBackground {
+    width: 200px;
+    height: 200px;
+    top: 25px;
+    left: 25px;
+  }
+
+  .banner .container .bg .title h1 {
+    font-size: 36px;
+  }
+
+  .banner .container .bg .title h1::before {
+    border-right: 60px solid transparent;
+    border-top: 40px solid #d8c3a5;
+    top: -5px;
+    left: -10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .imgClothes {
+    width: 180px;
+    height: 180px;
+  }
+
+  .circleBackground {
+    width: 150px;
+    height: 150px;
+    top: 15px;
+    left: 15px;
+  }
+
+  .banner .container .bg .title h1 {
+    font-size: 28px;
+  }
+
+  .banner .container .bg .title h1::before {
+    border-right: 40px solid transparent;
+    border-top: 30px solid #d8c3a5;
+    top: -4px;
+    left: -8px;
+  }
+}

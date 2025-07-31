@@ -1,0 +1,90 @@
+.testimonials {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.testimonials .testimonials-title {
+  color: #b89c79;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.testimonials .testimonials-heading {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.testimonials .carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+}
+
+.testimonials .arrow {
+  background-color: #e6d3bc;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.testimonials .arrow:hover {
+  background-color: #d3b997;
+}
+
+.testimonials .testimonial-card {
+  width: 300px;
+  height: 420px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.testimonials .testimonial-content {
+  position: absolute;
+  border-radius: 20px;
+  bottom: 25px;
+  background-color: rgba(235, 224, 208, 0.85);
+  width: 80%;
+  right: 30px;
+  text-align: center;
+}
+
+.testimonials .user-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: -40px;
+  background-color:  rgba(235, 224, 208, 0.85);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+}
+
+.testimonials .role {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.testimonials .review {
+  font-size: 0.95rem;
+  font-style: italic;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.testimonials .stars {
+  color: #f1c40f;
+  font-size: 18px;
+}
