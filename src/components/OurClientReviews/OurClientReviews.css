@@ -8,13 +8,11 @@
   font-weight: bold;
   letter-spacing: 2px;
 }
-
 .testimonials .testimonials-heading {
   font-family: 'Dancing Script', cursive;
   font-size: 2rem;
   margin-bottom: 40px;
 }
-
 .testimonials .carousel {
   display: flex;
   align-items: center;
